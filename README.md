@@ -1,4 +1,10 @@
 # Licensing Rx-Flappy!
+
+## What is rx-flappy?
+Rx-flappy is a simple game inspired by Flappy Bird, a popular game created in 2013.
+The game finish if the bird touches a pipe or the ground.
+
+This version use TypeScript with RxJS, a library for reactive programming using Observables.
 ## Why this repo?
 This repo is for licensing under a Free Software License the project shared by NyaGarcia in the [salmorejo.tech, 2021 edition](https://salmorejo.tech/2021) event, called [@NyaGarcía/Rx-Flappy](https://github.com/NyaGarcia/Rx-Flappy).
 
