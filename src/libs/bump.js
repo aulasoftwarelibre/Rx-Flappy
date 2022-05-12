@@ -1,5 +1,5 @@
-/* Copyright 2022 Estefanía García Gallardo 
- * 
+/* Copyright 2022 Estefanía García Gallardo
+ *
  * This file is part of Rx-Flappy.
  *
  * Rx-Flappy is free software: you can redistribute it and/or modify it under the
@@ -11,7 +11,7 @@
  * FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License along with
- * Rx-Flappy.. If not, see <https://www.gnu.org/licenses/>. 
+ * Rx-Flappy.. If not, see <https://www.gnu.org/licenses/>.
  */
 
 "use strict";
@@ -242,7 +242,7 @@ var Bump = (function() {
     hitTestPoint
     ------------
      Use it to find out if a point is touching a circlular or rectangular sprite.
-    Parameters: 
+    Parameters:
     a. An object with `x` and `y` properties.
     b. A sprite object with `x`, `y`, `centerX` and `centerY` properties.
     If the sprite has a `radius` property, the function will interpret
@@ -311,7 +311,7 @@ var Bump = (function() {
     hitTestCircle
     -------------
      Use it to find out if two circular sprites are touching.
-    Parameters: 
+    Parameters:
     a. A sprite object with `centerX`, `centerY` and `radius` properties.
     b. A sprite object with `centerX`, `centerY` and `radius`.
     */
@@ -381,7 +381,7 @@ var Bump = (function() {
     ---------------
      Use it to prevent a moving circular sprite from overlapping and optionally
     bouncing off a non-moving circular sprite.
-    Parameters: 
+    Parameters:
     a. A sprite object with `x`, `y` `centerX`, `centerY` and `radius` properties.
     b. A sprite object with `x`, `y` `centerX`, `centerY` and `radius` properties.
     c. Optional: true or false to indicate whether or not the first sprite
@@ -497,7 +497,7 @@ var Bump = (function() {
     movingCircleCollision
     ---------------------
      Use it to make two moving circles bounce off each other.
-    Parameters: 
+    Parameters:
     a. A sprite object with `x`, `y` `centerX`, `centerY` and `radius` properties.
     b. A sprite object with `x`, `y` `centerX`, `centerY` and `radius` properties.
     The sprites can contain an optional mass property that should be greater than 1.
@@ -843,7 +843,7 @@ var Bump = (function() {
     hitTestRectangle
     ----------------
      Use it to find out if two rectangular sprites are touching.
-    Parameters: 
+    Parameters:
     a. A sprite object with `centerX`, `centerY`, `halfWidth` and `halfHeight` properties.
     b. A sprite object with `centerX`, `centerY`, `halfWidth` and `halfHeight` properties.
      */
@@ -921,7 +921,7 @@ var Bump = (function() {
     hitTestCircleRectangle
     ----------------
      Use it to find out if a circular shape is touching a rectangular shape
-    Parameters: 
+    Parameters:
     a. A sprite object with `centerX`, `centerY`, `halfWidth` and `halfHeight` properties.
     b. A sprite object with `centerX`, `centerY`, `halfWidth` and `halfHeight` properties.
      */
@@ -1071,7 +1071,7 @@ var Bump = (function() {
     hitTestCirclePoint
     ------------------
      Use it to find out if a circular shape is touching a point
-    Parameters: 
+    Parameters:
     a. A sprite object with `centerX`, `centerY`, and `radius` properties.
     b. A point object with `x` and `y` properties.
      */
@@ -1108,7 +1108,7 @@ var Bump = (function() {
     circleRectangleCollision
     ------------------------
      Use it to bounce a circular shape off a rectangular shape
-    Parameters: 
+    Parameters:
     a. A sprite object with `centerX`, `centerY`, `halfWidth` and `halfHeight` properties.
     b. A sprite object with `centerX`, `centerY`, `halfWidth` and `halfHeight` properties.
      */
@@ -1260,7 +1260,7 @@ var Bump = (function() {
     circlePointCollision
     --------------------
      Use it to boucnce a circle off a point.
-    Parameters: 
+    Parameters:
     a. A sprite object with `centerX`, `centerY`, and `radius` properties.
     b. A point object with `x` and `y` properties.
      */
@@ -1301,7 +1301,7 @@ var Bump = (function() {
     bounceOffSurface
     ----------------
      Use this to bounce an object off another object.
-    Parameters: 
+    Parameters:
     a. An object with `v.x` and `v.y` properties. This represents the object that is colliding
     with a surface.
     b. An object with `x` and `y` properties. This represents the surface that the object
@@ -1371,7 +1371,7 @@ var Bump = (function() {
     `contain` can be used to contain a sprite with `x` and
     `y` properties inside a rectangular area.
      The `contain` function takes four arguments: a sprite with `x` and `y`
-    properties, an object literal with `x`, `y`, `width` and `height` properties. The 
+    properties, an object literal with `x`, `y`, `width` and `height` properties. The
     third argument is a Boolean (true/false) value that determines if the sprite
     should bounce when it hits the edge of the container. The fourth argument
     is an extra user-defined callback function that you can call when the
@@ -1381,7 +1381,7 @@ var Bump = (function() {
     ```
     The code above will contain the sprite's position inside the 512 by
     512 pixel area defined by the object. If the sprite hits the edges of
-    the container, it will bounce. The `callBackFunction` will run if 
+    the container, it will bounce. The `callBackFunction` will run if
     there's a collision.
      An additional feature of the `contain` method is that if the sprite
     has a `mass` property, it will be used to dampen the sprite's bounce
@@ -1396,14 +1396,14 @@ var Bump = (function() {
     let collision = contain(anySprite, {x: 0, y: 0, width: 512, height: 512});
      //If there's a collision, display the boundary that the collision happened on
     if(collision) {
-      if collision.has("left") console.log("The sprite hit the left");  
-      if collision.has("top") console.log("The sprite hit the top");  
-      if collision.has("right") console.log("The sprite hit the right");  
-      if collision.has("bottom") console.log("The sprite hit the bottom");  
+      if collision.has("left") console.log("The sprite hit the left");
+      if collision.has("top") console.log("The sprite hit the top");
+      if collision.has("right") console.log("The sprite hit the right");
+      if collision.has("bottom") console.log("The sprite hit the bottom");
     }
     ```
     If the sprite doesn't hit a boundary, the value of
-    `collision` will be `undefined`. 
+    `collision` will be `undefined`.
     */
 
       /*
@@ -1418,7 +1418,7 @@ var Bump = (function() {
              return value;
            }
          } else {
-           return value; 
+           return value;
          }
        };
         let compensateForAnchor = (o, value, axis) => {
@@ -1429,12 +1429,12 @@ var Bump = (function() {
              return 0;
            }
          } else {
-           return 0; 
+           return 0;
          }
        };
         let compensateForAnchors = (a, b, property1, property2) => {
           return compensateForAnchor(a, a[property1], property2) + compensateForAnchor(b, b[property1], property2)
-       };    
+       };
        //Create a set called `collision` to keep track of the
        //boundaries with which the sprite is colliding
        let collision = new Set();

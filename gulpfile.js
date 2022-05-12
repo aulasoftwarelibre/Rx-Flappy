@@ -1,5 +1,5 @@
-/* Copyright 2022 Estefanía García Gallardo 
- * 
+/* Copyright 2022 Estefanía García Gallardo
+ *
  * This file is part of Rx-Flappy.
  *
  * Rx-Flappy is free software: you can redistribute it and/or modify it under the
@@ -11,7 +11,7 @@
  * FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License along with
- * Rx-Flappy.. If not, see <https://www.gnu.org/licenses/>. 
+ * Rx-Flappy.. If not, see <https://www.gnu.org/licenses/>.
  */
 
 const gulp = require('gulp');
