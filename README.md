@@ -26,4 +26,42 @@ Please take it easy, take your time, git's power allows us to fix everything!
 
 Ask, debate and don't be afraid to share your work.
 
+## Run the game
+Basic instructions for testing the game!
 
+### You need a npm, nodejs running environment:
+easiest way in a GNU/Linux OS, could be using virtual environments:
+
+First creating the python one (you need python virtualenv installed)
+```
+$ virtualenv .penv
+```
+
+Activating it
+```
+$ source .penv/bin/activate
+```
+
+Second, creating the nodejs one with nodeenv.
+```
+(.penv)$ pip install nodeenv
+```
+```
+(.penv)$ nodeenv .env
+```
+
+Activating it
+```
+(.penv)$ source .env/bin/activate
+```
+
+### npm installing and deployment commands
+
+```
+(.env)$ npm install
+```
+```
+(.env)$ npm start
+```
+
+Application will be running in http://localhost:5000
