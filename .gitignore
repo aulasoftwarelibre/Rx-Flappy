@@ -1,2 +1,5 @@
 dist
 node_modules
+
+# codium stuff
+Rx-Flappy.code-workspace

@@ -19,7 +19,7 @@ The *master* branch is for the project explanations.
 The *work-done* branch will be the real already licensed project, ready to register it to the [GNU Savannah portal](https://savannah.nongnu.org/), and give it back to NyaGarcia.
 
 ### fork, edit and pull request
-If you want to participate, simply take a task, fork the repo, do it and share back your changes by a pull request to the work-done branch
+If you want to participate, simply take a task, fork the repo, do it and share back your changes by a pull request to the license chosen branch. (currently we are working in a GPLv3 and an Apache2 licensed project version)
 
 ## Participate!
 Please take it easy, take your time, git's power allows us to fix everything!
