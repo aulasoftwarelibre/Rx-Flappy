@@ -16,7 +16,9 @@ We'll open and close different issues for every task, questions, discussions, pr
 ### branches
 The *master* branch is for the project explanations.
 
-The *work-done* branch will be the real already licensed project, ready to register it to the [GNU Savannah portal](https://savannah.nongnu.org/), and give it back to NyaGarcia.
+The *gplv3* branch will be the GPLv3+ licensed project, ready to register it to the [GNU Savannah portal](https://savannah.nongnu.org/), and give it back to NyaGarcia if she agree the project changes needed to be GPLv3 licensed.
+
+The *apache2* branch will be the Apache2 licensed project, ready to give it back to NyaGarcia as a non copyleft protected project.
 
 ### fork, edit and pull request
 If you want to participate, simply take a task, fork the repo, do it and share back your changes by a pull request to the license chosen branch. (currently we are working in a GPLv3 and an Apache2 licensed project version)
